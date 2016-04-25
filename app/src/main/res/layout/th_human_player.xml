@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF006600"
+    android:id="@+id/topGUILayout">
+<!--
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="doFinish"
+            android:text="Done" />
+    -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".125">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cpu1Name"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#eee41b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cpu2Name"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            android:textColor="#eee41b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cpu3Name"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#eee41b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/CPU1Money"
+            android:layout_weight="1"
+            android:textColor="#eee41b"
+            android:textSize="20dp"
+            android:gravity="center_vertical|right" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp1Card1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp1Card2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/CPU2Money"
+            android:layout_weight="1"
+            android:textColor="#eee41b"
+            android:textSize="20dp"
+            android:gravity="center_vertical|right" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp2Card1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp2Card2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/CPU3Money"
+            android:layout_weight="1"
+            android:textColor="#eee41b"
+            android:textSize="20dp"
+            android:gravity="center_vertical|right" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp3Card1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/cp3Card2"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/potValue"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="#eee41b"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/midCard1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/midCard2"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/midCard3"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/midCard4"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/midCard5"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/userDisplayName"
+            android:layout_weight="3"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#eee41b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="$1000"
+            android:id="@+id/userMoney"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#eee41b"
+            android:layout_marginRight="0dp"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/playerCard1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/playerCard2"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Raise By:"
+            android:id="@+id/textView2"
+            android:layout_weight=".75"
+            android:textSize="20dp"
+            android:textColor="#eee41b"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/betTextView"
+            android:layout_weight=".75"
+            android:gravity="center|center_vertical|left"
+            android:textColor="#eee41b"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:id="@+id/betSeekBar"
+                android:layout_weight="2.5"
+                android:progressBackgroundTint="#ff1211a3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raise"
+                android:id="@+id/customBetButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Call The Bet"
+            android:id="@+id/callBetButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Check"
+            android:id="@+id/checkButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Fold"
+            android:id="@+id/foldButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Quit Game"
+            android:id="@+id/newGameButton"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
